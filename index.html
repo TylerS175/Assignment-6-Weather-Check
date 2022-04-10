@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/assets/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
     <title>Weather Dashboard</title>
 </head>
+
 <body>
     <header class="container">
         <h1 style="background-color:darkblue; color:white;text-align: center;">Weather Dashboard</h1>
@@ -15,23 +17,32 @@
     <div class="row">
         <!--Creating the Search for the City bar-->
         <div class="col-4 bg-light">
-        <div class="mt-2">Search for a City:</div>    
-        <div class="input mb-3">
-            <input type="text" id="city" class="form">
-            <button class="btn btn-primary" type="button" id="searchCity"><i class="fas fa-search"></i></button>
+            <div class="mt-2">Search for a City:</div>
+            <div class="input mb-3">
+                <input type="text" id="city" class="form">
+                <button class="btn btn-primary" type="button" id="searchCity"><i class="fas fa-search"></i></button>
+            </div>
         </div>
-    </div>
-    <!--The List Breakdown (Left Column)-->
-    <div class="list-group"></div>
+        <!--The List Breakdown (Left Column)-->
+        <div class="list-group"></div>
     </div>
     <div class="col-8">
         <div class="row p-2">
             <div class="card">
-        <!--Shows the main card-->
-       <div class="card-body"></div>
-       </div>         
+                <!--Shows the main card-->
+                <div class="card-body"></div>
+            </div>
+        </div>
+        <!--Presenting the 5-day Forecast-->
+        <div class="row">
+            <h4>5-day Forecast:</h4>
+        </div>
+        <div id="weeklyForecast" class="row"></div>
+        </div>
+    </div>
     
+    <script src="./assets/js/javascript.js"></script>
 </body>
 
-<script src="./assets/js/javascript.js"></script>
+
 </html>
